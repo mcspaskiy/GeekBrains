@@ -1,4 +1,4 @@
-package com.mcspaskiy;
+package com.mcspaskiy.utils;
 
 public interface Stack<T> {
     void push(T element);

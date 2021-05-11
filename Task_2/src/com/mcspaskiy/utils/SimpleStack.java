@@ -1,12 +1,12 @@
-package com.mcspaskiy;
+package com.mcspaskiy.utils;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class HandMadeStack<T> implements Stack<T> {
+public class SimpleStack<T> implements Stack<T> {
     private final List<T> stack;
 
-    public HandMadeStack() {
+    public SimpleStack() {
         this.stack = new ArrayList<>();
     }
 

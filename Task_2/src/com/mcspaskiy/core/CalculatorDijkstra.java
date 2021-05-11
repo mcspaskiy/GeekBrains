@@ -1,12 +1,15 @@
-package com.mcspaskiy;
+package com.mcspaskiy.core;
+
+import com.mcspaskiy.utils.SimpleStack;
+import com.mcspaskiy.utils.Stack;
 
 import java.util.List;
 
-public class Calculator {
+public class CalculatorDijkstra implements Calculator {
 
-    public Double calculateValue(List<String> resultExpression) {
-        Stack<Double> localStack = new HandMadeStack();
-        for (String element : resultExpression) {
+    public Double calculateValue(List<String> elements) {
+        Stack<Double> localStack = new SimpleStack();
+        for (String element : elements) {
             switch (element) {
                 case "+":
                     localStack.push(localStack.pop() + localStack.pop());

@@ -1,4 +1,4 @@
-package com.mcspaskiy;
+package com.mcspaskiy.core;
 
 import java.util.List;
 

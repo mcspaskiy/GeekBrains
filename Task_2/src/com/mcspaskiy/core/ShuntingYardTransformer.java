@@ -1,4 +1,7 @@
-package com.mcspaskiy;
+package com.mcspaskiy.core;
+
+import com.mcspaskiy.utils.SimpleStack;
+import com.mcspaskiy.utils.Stack;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +13,7 @@ public class ShuntingYardTransformer implements Transformer {
     private Stack<String> stack;
 
     public ShuntingYardTransformer() {
-        this.stack = new HandMadeStack();
+        this.stack = new SimpleStack();
     }
 
     @Override
